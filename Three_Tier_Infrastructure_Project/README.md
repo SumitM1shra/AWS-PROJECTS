@@ -1,7 +1,7 @@
-# AWS Three Tier Web Architecture Workshop
+# AWS Three Tier Architecture Workshop
 
 ## Description: 
-This workshop is a hands-on walk through of a three-tier web architecture in AWS. We will be manually creating the necessary network, security, app, and database components and configurations in order to run this architecture in an available and scalable manner.
+This project is a hands-on walk through of a three-tier web architecture in AWS. Manually creating the necessary network, security, app, and database components and configurations in order to run this architecture in an available and scalable manner.
 
 ## Architecture Overview
 ![AWS Architecture - DrawIO](https://github.com/pandacloud1/AWS_Project1/assets/134182273/3e46931f-0802-48a7-b044-22cd2afde467)
@@ -36,10 +36,8 @@ In this architecture, a public-facing Application Load Balancer forwards client 
 4. **App-Tier-SG** --> Port 4000 --> Internal-LB-SG.
 5. **DB-Tier-SG** --> MySQL (3306) --> App-Tier-SG.
 
-## Step 6: Create DB Subnet Group & RDS
+## Step 6: Create DB Subnet Group
 - Create DB subnet group.
-- Create RDS - Multi-AZ.
-- Place them in DB subnet group created above.
 
 ## Step 7: Create Test App Server, Install Packages, Test Connections
 - [Test App-Server Commands](https://github.com/pandacloud1/AWS_Project1/blob/main/app-server-commands)
@@ -57,8 +55,6 @@ In this architecture, a public-facing Application Load Balancer forwards client 
 - Create target group.
 - Create external load balancer.
 - Create autoscaling group.
-
-## Step 9: Add External-ALB-DNS Record in Route 53
 
 ## Step 10: Create CloudWatch Alarms Along with SNS
 
